@@ -1,14 +1,12 @@
-# Feeling Blue?
-file:///Users/youssefaouni/Desktop/connections%20Lab/Project1/index.html
+# Come-With
+### Project2 created by Youssef Aouni and Bassil Ahmed - Connections Lab class
 ## Concept:
-This is a playful website simple and minimalist aimed mainly for teenagers. On scroll the website displays random quotes from historical figure, 
-random advice, Kanye quotes and random dad jokes that are all fetched from APIs. Moreover, the website allows the users to submit their name, country 
-and advice into a dataset created through ‘sheetsdb’ that would later on be displayed for another user of the website.
-The Goal of this website is to uplift the mood of the user and entertain them, while keeping it an interactive experience through allowing users to 
-contribute in creating the contact. This will allow the user to feel like a part of a life project in constant shift and evolution.
-
-<img width="1039" alt="Screenshot 2022-10-02 at 19 22 45" src="https://user-images.githubusercontent.com/112507667/193461924-47f0b12b-7ebb-4759-9e5a-80d52f2d2bbb.png">
-
+Come-With is an interactive website that encourages Students from the NYUAD community to get out of their comfort zone and partake in different activities
+and foster real-life connections between the users. Come-With is a tool that encourages students to take advantage of the richness of real life events and activities around, instead of wasting time online. The web application is a tool that unlike other internet products does not aim to absorb the time and 
+life of its users, but it is an intermediary that aims to connect people in real life.
+Come-With displays a collection of activities from different categories: sports, conferences, events, city events and user-created events. Moreover, the website has a feature that allows the users to create personalized events that will be posted on the websiteand will automatically create a chat-box that will gather all the people interested in the event.
+Once the user picks an activity they will be automatically directed to a real-time chat box that allows the users to chat and agree on the details of their 
+meeting.
 
 ## Design:
 The user experience has been specifically engineered to nudge the user to discover, try and experiment with the intercept. Since the website does not have any instructions, the user is encouraged to 'discover' the content of the website on their own. The buttons have been turned into 'self-explanatory' images to enhance the aesthetic of the website, but they also nudge the user into clicking them, thus making the user experience more fulfilling and playful.
