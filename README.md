@@ -15,44 +15,35 @@ The user experience has been specifically engineered to nudge the user to discov
 of the activity changes upon hover. These design changes are specifically made to appeal to the users that are mostly Gen-z internet savy teenagers. Moreover, the design of the website is straight forward and clean-cut in order to attract the attention of the user quickly and avoid wasting the users
 time on useles features or design descisions.
 <img width="500" alt="Screenshot 2022-11-12 at 22 02 00" src="https://user-images.githubusercontent.com/112507667/201488278-f7652e91-d13a-41a6-af03-31aefe3dde0c.png"> 
-### Chat-box
+### Chat-box:
+The chat box feature is designed to be straight forward and in a big font with real-time chatting capabilities. Each text includes the name and the content of the message. Moreover, The input field is designed to be big at the bottom of the page and it is designed to automatically send the message of the user once the enter key is pressed. This has been purposely implemented in the website to accommodate the young user base that like speed and straight forward 
+design.
 <img width="500" alt="Screenshot 2022-11-12 at 20 29 53" src="https://user-images.githubusercontent.com/112507667/201488302-edca55a5-d3b5-4323-901d-688747a041f8.png">
 
 
-
-
-
-
 ## Technicalities & Challenges:
-### APIs:
-The website fetches four random APIs from the web and implementing each of them had its own challenges, e.g: Accessing the necessary element from the 
-fetched data, getting the proper keys, and fixing 'sheets db'. Having the data transferred to and from the google sheet was a challenge. I used open-source code to solve some of the problems I faced.
-Find below some of the codes I used to access certain elements in the fetched api data: 
 
-<img width="520" alt="Screenshot 2022-10-01 at 00 45 57" src="https://user-images.githubusercontent.com/112507667/193353756-c5b96ab0-6d7c-4f61-a085-0c918cd5a9dd.png"> <img width="571" alt="Screenshot 2022-10-01 at 00 48 36" src="https://user-images.githubusercontent.com/112507667/193353964-c8bcfe75-b55e-4846-a143-133883dd9fd0.png">
+### Adding name to the chat:
+While working on the chat box it has been a challenge to emit the name of the user and add it to the chat. Because by that time the message emitting system was working but the infrastructure to send the name was not there and everything had to be redone and reverse engineered to include the name of the users in the chat. However, to avoid the problem we went around the issue by including the name with the message and separate them with a signal.
+### Chat-box:
+In order to make the chat-box appear and disapear once the user picks and activity. All the elements on the page disapear and the chat-box appears on the 
+webpage. To avoid this problem our team used this code in the javascript.
+<img width="470" alt="Screenshot 2022-11-12 at 23 32 51" src="https://user-images.githubusercontent.com/112507667/201491458-65a704ff-0e4e-4ff0-abad-66da15177979.png">
 
-### Sheetsdb:
-I wanted to elevate the website by allowing the users to enter their names, countries and motivational messages. I had to find a way to store the data online. Thanks to a classmate I have been able to implement google's Sheets Db in my project through google pages. See below the code I implemented to use this method:
+### Creating new divs:
+Creating new divs and adding them to each different category has been a challenge, it was also a difficulty to emit the div and have show to different users that are connected to the server.
 
-<img width="665" alt="Screenshot 2022-10-02 at 19 21 08" src="https://user-images.githubusercontent.com/112507667/193461858-2ec68d09-954b-4cd2-9f17-05f7b8f5e2f2.png">
-<img width="484" alt="Screenshot 2022-10-02 at 19 21 38" src="https://user-images.githubusercontent.com/112507667/193461881-b91a5943-c319-47ca-9cc6-57e4de5079dc.png">
+### Pop-up:
+It was a challenge designing the pop-up and making it appear and disapear once the user clickes on the create a new activity option. this problem was solved by including certain css style code. Moreover designing the way the pop up appears then disappears from the screen was a challenge.
+
+
+
+
 
 ## Website-Design:
-In order to make the text appear on the whole webpage and animate on scroll I used AOS library:https://michalsnik.github.io/aos/. 
-This allowed me to animate the text, making it fade in and fade out, zoom in, flip and other animations that keep the user on their feet not xpecting how the next element of the page will show up. The aos library allowed me to wrap the element I wish to download in a div and describe The way I want it to be animated:
-<img width="922" alt="Screenshot 2022-10-02 at 18 04 06" src="https://user-images.githubusercontent.com/112507667/193458176-2ea39c79-283c-4574-8864-8a89d7d58167.png">
 
-Furthermore, to design the background and make it change color from blue to red, I wrote this css code:
-<img width="843" alt="Screenshot 2022-10-02 at 18 55 17" src="https://user-images.githubusercontent.com/112507667/193460639-507d56de-b4a2-493d-9ab6-6c3ca12d21da.png">
-
-I also attempted to change the style of the button from a normal button format to an image. At first this seemed like a hard task. After further research, however I found a direct and efficient way to turn all the buttons into images that morph on hover:
-<img width="674" alt="Screenshot 2022-10-02 at 19 02 59" src="https://user-images.githubusercontent.com/112507667/193461046-cdad135b-5d3f-4985-a3cb-c49fe89b69da.png">
-<img width="159" alt="Screenshot 2022-10-02 at 19 04 21" src="https://user-images.githubusercontent.com/112507667/193461111-56308caa-561a-485f-9ee6-df9404fc57b9.png">
 ## Next steps:
-I would like to change the pop up that alerts the user when the input has been recorded in the google sheet.
-I would also like to animate the images that serve as the buttons and make them morph, curle up or move when clicked by the user.
-I would also like to make the website available on phones, maybe as a widget that generates random advice or quotes.
+
 ## PS:
-The sheets DB have a ceratain quota, so after a certain number of inputs it will stop functioning proporly. So please notify me if you face any problems with the feature.
-So 
+
 
