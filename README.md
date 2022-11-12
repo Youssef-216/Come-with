@@ -37,10 +37,8 @@ Creating new divs and adding them to each different category has been a challeng
 It was a challenge designing the pop-up and making it appear and disapear once the user clickes on the create a new activity option. this problem was solved by including certain css style code. Moreover designing the way the pop up appears then disappears from the screen was a challenge.
 
 
-
-
-
-## Website-Design:
+## Youssef's Journey:
+I focused mostly on the 
 
 ## Next steps:
 
