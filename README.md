@@ -1,5 +1,5 @@
 # Come-With
-### Project2 created by Youssef Aouni and Bassil Ahmed - Connections Lab class
+### Project2: created by Youssef Aouni and Bassil Ahmed - Connections Lab class
 ## Concept:
 Come-With is an interactive website that encourages Students from the NYUAD community to get out of their comfort zone and partake in different activities
 and foster real-life connections between the users. Come-With is a tool that encourages students to take advantage of the richness of real life events and activities around, instead of wasting time online. The web application is a tool that unlike other internet products does not aim to absorb the time and 
@@ -8,14 +8,18 @@ Come-With displays a collection of activities from different categories: sports,
 Once the user picks an activity they will be automatically directed to a real-time chat box that allows the users to chat and agree on the details of their 
 meeting.
 
+<img width="724" alt="Screenshot 2022-11-12 at 21 46 48" src="https://user-images.githubusercontent.com/112507667/201487606-75f84642-4112-48d4-b1c9-3e06d19dbb22.png">
+
 ## Design:
-The user experience has been specifically engineered to nudge the user to discover, try and experiment with the intercept. Since the website does not have any instructions, the user is encouraged to 'discover' the content of the website on their own. The buttons have been turned into 'self-explanatory' images to enhance the aesthetic of the website, but they also nudge the user into clicking them, thus making the user experience more fulfilling and playful.
-The design of the website is purpucioussly clean cut and minimalistic, since items appear organically with big fonts on the screen as the user scrolls through the website. The gradient of the background color slowlly veirs from dark blue to red as the user scrolls throughout the webpage, thus reflecting 
-the mood of the user. 
+The user experience has been specifically engineered to nudge the user to discover to web-page which is a list of activities divided to different categories. The activities are presented in a big and clear font, whith an emoji describing each activity on the website, and the collor of the background
+of the activity changes upon hover. These design changes are specifically made to appeal to the users that are mostly Gen-z internet savy teenagers. Moreover, the design of the website is straight forward and clean-cut in order to attract the attention of the user quickly and avoid wasting the users
+time on useles features or design descisions.
+<img width="500" alt="Screenshot 2022-11-12 at 22 02 00" src="https://user-images.githubusercontent.com/112507667/201488278-f7652e91-d13a-41a6-af03-31aefe3dde0c.png"> 
+### Chat-box
+<img width="500" alt="Screenshot 2022-11-12 at 20 29 53" src="https://user-images.githubusercontent.com/112507667/201488302-edca55a5-d3b5-4323-901d-688747a041f8.png">
 
-<img width="1334" alt="Screenshot 2022-10-02 at 19 24 08" src="https://user-images.githubusercontent.com/112507667/193461970-e515994e-7b58-43f3-bd0a-41a4362151bc.png">
 
-<img width="1381" alt="Screenshot 2022-10-02 at 19 23 44" src="https://user-images.githubusercontent.com/112507667/193461959-426cc164-922a-4fc0-9b69-a18c29ba8767.png">
+
 
 
 
