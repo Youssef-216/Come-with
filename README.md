@@ -17,6 +17,7 @@ of the activity changes upon hover. These design changes are specifically made t
 time on useless features or design decisions.
 <img width="500" alt="Screenshot 2022-11-12 at 22 02 00" src="https://user-images.githubusercontent.com/112507667/201488278-f7652e91-d13a-41a6-af03-31aefe3dde0c.png"> 
 ### Chat-box:
+
 The chat box feature is designed to be straight forward and in a big font with real-time chatting capabilities. Each text includes the name and the content of the message. Moreover, The input field is designed to be big at the bottom of the page and it is designed to automatically send the message of the user once the enter key is pressed. This has been purposely implemented in the website to accommodate the young user base that like speed and straight forward 
 design.
 <img width="500" alt="Screenshot 2022-11-12 at 20 29 53" src="https://user-images.githubusercontent.com/112507667/201488302-edca55a5-d3b5-4323-901d-688747a041f8.png">
@@ -28,8 +29,10 @@ design.
 ### Adding name to the chat:
 While working on the chat box it has been a challenge to emit the name of the user and add it to the chat. Because by that time the message emitting system was working but the infrastructure to send the name was not there and everything had to be redone and reverse engineered to include the name of the users in the chat. However, to avoid the problem we went around the issue by including the name with the message and separate them with a signal.
 ### Chat-box:
+
 In order to make the chat-box appear and disappear once the user picks an activity. All the elements on the page disappear and the chat-box appears on the 
 webpage. To avoid this problem our team used this code in the javascript.
+
 <img width="470" alt="Screenshot 2022-11-12 at 23 32 51" src="https://user-images.githubusercontent.com/112507667/201491458-65a704ff-0e4e-4ff0-abad-66da15177979.png">
 
 ### Creating new divs:
@@ -42,11 +45,47 @@ It was a challenge designing the pop-up and making it appear and disappear once 
 
 When a user connects to the website, the socket makes a connection. 
 The first thing, after a connection is built between the server and the client, the client does is to check if there are already any new activities created by people and those are imported on to the webpage by the client.
+'''
+
+    newact.addEventListener("click", () => {
+    var input_act = document.getElementById("Activity").value;
+    var input_category = document.getElementById("Category").value;
+
+    // Send the Activity to the Server
+    socket.emit("activity", {
+        activity: input_act,
+        category: input_category
+    })
+
+    })
 This happens in real time so that whenever anyone creates a new activity, it gets uploaded everywhere else.
 This is also useful for when anyone reloads the page, the new activity is still there.
 Whenever a client clicks on the activity, it sends the name to the server and the server creates a room of the name of the activity.
+'''
+
+      //emit a message requesting to join the room
+      socket.emit('joinroom', {
+          room: e.target.id
+      })
+
 It then checks the already available messages available in the room and sends it back to the client. 
+
+      socket.on('joinroom', (data) => {
+              console.log(io.sockets.adapter.sids);
+              if(socket.room) {
+                  socket.leave(socket.room);
+              }
+              socket.join(data.room);
+              socket.room = data.room;
+              if (!messages[socket.room]) {
+                  messages[socket.room] = [];
+              }
+              socket.emit('messages',messages[socket.room]);
+          }) 
+
 This is helpful for people when they join a chat room and the previous messages are still there.
+
+
 ## Youssef's Journey:
 I focused on the front of the project I had to make the design straightforward and clean cut, one of the issues I faced while designing the pop up and 
 making it appear and disappear appropriately and contain the needed information. Having each new activity join its appropriate category was challenging.
